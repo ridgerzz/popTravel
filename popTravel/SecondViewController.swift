@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        GMSServices.provideAPIKey("AIzaSyCPwKNE0A9DnHWydmJLBXFlxLrhcOnsFHk")
+        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapView
+        
     }
 
 

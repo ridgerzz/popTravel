@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1542672AB05A813B4C000556 /* Pods_popTravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0171BADD19CC3E0929E215F /* Pods_popTravel.framework */; };
 		16B3433E229F7531009F4850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3433D229F7531009F4850 /* AppDelegate.swift */; };
 		16B34340229F7531009F4850 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3433F229F7531009F4850 /* FirstViewController.swift */; };
 		16B34342229F7531009F4850 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B34341229F7531009F4850 /* SecondViewController.swift */; };
 		16B34345229F7531009F4850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B34343229F7531009F4850 /* Main.storyboard */; };
 		16B34347229F7532009F4850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B34346229F7532009F4850 /* Assets.xcassets */; };
 		16B3434A229F7532009F4850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B34348229F7532009F4850 /* LaunchScreen.storyboard */; };
+		16B34352229FAF81009F4850 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B34351229FAF81009F4850 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		16B34346229F7532009F4850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16B34349229F7532009F4850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16B3434B229F7532009F4850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16B34351229FAF81009F4850 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		C0171BADD19CC3E0929E215F /* Pods_popTravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_popTravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C170A8613BFE8F51B8123872 /* Pods-popTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popTravel.release.xcconfig"; path = "Target Support Files/Pods-popTravel/Pods-popTravel.release.xcconfig"; sourceTree = "<group>"; };
+		E657C16F350A2EC011FD80BD /* Pods-popTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popTravel.debug.xcconfig"; path = "Target Support Files/Pods-popTravel/Pods-popTravel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1542672AB05A813B4C000556 /* Pods_popTravel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				16B3433C229F7531009F4850 /* popTravel */,
 				16B3433B229F7531009F4850 /* Products */,
+				8EFD5B62FDBD43CA93135580 /* Pods */,
+				1B05C3400D6F6256915112C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,31 @@
 				16B3433D229F7531009F4850 /* AppDelegate.swift */,
 				16B3433F229F7531009F4850 /* FirstViewController.swift */,
 				16B34341229F7531009F4850 /* SecondViewController.swift */,
+				16B34351229FAF81009F4850 /* ThirdViewController.swift */,
 				16B34343229F7531009F4850 /* Main.storyboard */,
 				16B34346229F7532009F4850 /* Assets.xcassets */,
 				16B34348229F7532009F4850 /* LaunchScreen.storyboard */,
 				16B3434B229F7532009F4850 /* Info.plist */,
 			);
 			path = popTravel;
+			sourceTree = "<group>";
+		};
+		1B05C3400D6F6256915112C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0171BADD19CC3E0929E215F /* Pods_popTravel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EFD5B62FDBD43CA93135580 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E657C16F350A2EC011FD80BD /* Pods-popTravel.debug.xcconfig */,
+				C170A8613BFE8F51B8123872 /* Pods-popTravel.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16B3434E229F7532009F4850 /* Build configuration list for PBXNativeTarget "popTravel" */;
 			buildPhases = (
+				1CCCC9D03D5456002821747E /* [CP] Check Pods Manifest.lock */,
 				16B34336229F7531009F4850 /* Sources */,
 				16B34337229F7531009F4850 /* Frameworks */,
 				16B34338229F7531009F4850 /* Resources */,
+				C5A45314CC59460DCC0CFD3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,12 +163,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CCCC9D03D5456002821747E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-popTravel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A45314CC59460DCC0CFD3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-popTravel/Pods-popTravel-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-popTravel/Pods-popTravel-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-popTravel/Pods-popTravel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16B34336229F7531009F4850 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				16B34342229F7531009F4850 /* SecondViewController.swift in Sources */,
+				16B34352229FAF81009F4850 /* ThirdViewController.swift in Sources */,
 				16B3433E229F7531009F4850 /* AppDelegate.swift in Sources */,
 				16B34340229F7531009F4850 /* FirstViewController.swift in Sources */,
 			);
@@ -284,6 +357,7 @@
 		};
 		16B3434F229F7532009F4850 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E657C16F350A2EC011FD80BD /* Pods-popTravel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +376,7 @@
 		};
 		16B34350229F7532009F4850 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C170A8613BFE8F51B8123872 /* Pods-popTravel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
