@@ -47,21 +47,76 @@
             </objects>
             <point key="canvasLocation" x="775" y="-1000"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Data Source-->
         <scene sceneID="tir-kI-bfL">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jg8-tC-Ay7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="gmT-hx-T0e" customClass="ThirdViewController" customModule="popTravel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qdm-QX-bzg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AuF-X6-tMz" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="44" width="375" height="418"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="418" id="SiA-w6-PNl"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="gmT-hx-T0e" id="9nQ-E8-p0Z"/>
+                                    <outlet property="delegate" destination="gmT-hx-T0e" id="em4-2g-vE5"/>
+                                </connections>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EU8-kh-uXM">
+                                <rect key="frame" x="0.0" y="462" width="375" height="267"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="HCj-Hb-0mc" style="IBUITableViewCellStyleDefault" id="9sq-ZH-5EI">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9sq-ZH-5EI" id="Lzs-Ni-jLD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Lorem ipsum dolor sit er elit lamet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HCj-Hb-0mc">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gmT-hx-T0e" id="jlX-Zm-kqF"/>
+                                    <outlet property="delegate" destination="gmT-hx-T0e" id="3jT-o5-yLb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EU8-kh-uXM" firstAttribute="trailing" secondItem="5sZ-ne-vPO" secondAttribute="trailing" id="51d-dB-unq"/>
+                            <constraint firstItem="EU8-kh-uXM" firstAttribute="top" secondItem="AuF-X6-tMz" secondAttribute="bottom" id="8Zg-po-pt9"/>
+                            <constraint firstItem="AuF-X6-tMz" firstAttribute="top" secondItem="5sZ-ne-vPO" secondAttribute="top" id="Ktq-Yo-TBd"/>
+                            <constraint firstItem="AuF-X6-tMz" firstAttribute="trailing" secondItem="5sZ-ne-vPO" secondAttribute="trailing" id="Rbo-3p-JMu"/>
+                            <constraint firstItem="AuF-X6-tMz" firstAttribute="leading" secondItem="5sZ-ne-vPO" secondAttribute="leading" id="XdS-nc-ZnE"/>
+                            <constraint firstItem="EU8-kh-uXM" firstAttribute="bottom" secondItem="5sZ-ne-vPO" secondAttribute="bottom" id="aWW-RO-ihC"/>
+                            <constraint firstItem="EU8-kh-uXM" firstAttribute="leading" secondItem="5sZ-ne-vPO" secondAttribute="leading" id="enm-eY-LH9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5sZ-ne-vPO"/>
                     </view>
                     <tabBarItem key="tabBarItem" image="calendar_icon" landscapeImage="calendar_icon" largeContentSizeImage="calendar_icon" selectedImage="calendar_icon" id="1Li-ab-cnA"/>
+                    <navigationItem key="navigationItem" id="dxW-Ey-wmX"/>
+                    <connections>
+                        <outlet property="calendar" destination="AuF-X6-tMz" id="Q1r-Pe-JOx"/>
+                        <outlet property="calendarHeightConstraint" destination="SiA-w6-PNl" id="A5a-6y-xcV"/>
+                        <outlet property="tableView" destination="EU8-kh-uXM" id="WaL-s7-0Ui"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jg8-tC-Ay7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773.91304347826087" y="388.85869565217394"/>
+            <point key="canvasLocation" x="774" y="378"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -129,6 +184,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VSC-3h-GMs"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
