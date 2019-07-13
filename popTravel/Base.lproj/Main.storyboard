@@ -18,39 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="branch" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="133.66666666666666" y="384.66666666666669" width="108" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="brank ok" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="159" y="435.66666666666669" width="57" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Fi-xP-rSQ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="EMG-Ps-Up2">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <connections>
+                                        <segue destination="K2M-N1-8Tq" kind="embed" id="GWM-GO-tbk"/>
+                                    </connections>
+                                </containerView>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="0Fi-xP-rSQ" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="Rad-qb-drL"/>
+                            <constraint firstItem="0Fi-xP-rSQ" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="Wom-72-M8A"/>
+                            <constraint firstItem="0Fi-xP-rSQ" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="fhM-9m-ZmH"/>
+                            <constraint firstItem="0Fi-xP-rSQ" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="lR6-bM-pGp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home_icon" landscapeImage="home_icon" largeContentSizeImage="home_icon" selectedImage="home_icon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="mapView" destination="EMG-Ps-Up2" id="2M0-gp-gPP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="-1000"/>
+            <point key="canvasLocation" x="773.60000000000002" y="-1000.4926108374385"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="tir-kI-bfL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jg8-tC-Ay7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="gmT-hx-T0e" customClass="ThirdViewController" customModule="popTravel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qdm-QX-bzg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -115,6 +115,7 @@
                         <outlet property="tableView" destination="EU8-kh-uXM" id="WaL-s7-0Ui"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jg8-tC-Ay7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="774" y="378"/>
         </scene>
@@ -150,10 +151,11 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="add_location_btn" landscapeImage="add_location_btn" largeContentSizeImage="add_location_btn" selectedImage="add_location_btn" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="Rqi-Xb-jeX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="-320"/>
+            <point key="canvasLocation" x="1665" y="-257"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bJd-zC-sFP">
@@ -174,16 +176,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cDi-xI-D8e"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="settings_btn" landscapeImage="settings_btn" largeContentSizeImage="settings_btn" selectedImage="settings_btn" id="y9e-Fp-tgc"/>
+                    <tabBarItem key="tabBarItem" image="profile_icon" landscapeImage="profile_icon" largeContentSizeImage="profile_icon" selectedImage="profile_icon" id="y9e-Fp-tgc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mol-Au-j0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="773.91304347826087" y="1103.804347826087"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Tab Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="MyTabController" customModule="popTravel" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="VSC-3h-GMs"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -201,11 +203,26 @@
             </objects>
             <point key="canvasLocation" x="4" y="90"/>
         </scene>
+        <!--Google Map Mini-->
+        <scene sceneID="LAG-Ot-Soz">
+            <objects>
+                <viewController id="K2M-N1-8Tq" customClass="googleMapMini" customModule="popTravel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tkj-ML-Aqs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Jhg-Bs-w1a"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pkb-N7-4bk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="-1000"/>
+        </scene>
     </scenes>
     <resources>
         <image name="add_location_btn" width="17" height="24.333333969116211"/>
         <image name="calendar_icon" width="20" height="20"/>
         <image name="home_icon" width="16" height="18.666666030883789"/>
-        <image name="settings_btn" width="22.666666030883789" height="22.666666030883789"/>
+        <image name="profile_icon" width="20" height="20"/>
     </resources>
 </document>

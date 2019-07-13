@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1542672AB05A813B4C000556 /* Pods_popTravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0171BADD19CC3E0929E215F /* Pods_popTravel.framework */; };
+		16183DDD22DA7F74001178DC /* googleMapMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16183DDC22DA7F74001178DC /* googleMapMini.swift */; };
+		16183DDF22DA9569001178DC /* MyTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16183DDE22DA9569001178DC /* MyTabController.swift */; };
+		16183DE122DA95EC001178DC /* ATabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16183DE022DA95EC001178DC /* ATabController.swift */; };
 		16B3433E229F7531009F4850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3433D229F7531009F4850 /* AppDelegate.swift */; };
 		16B34340229F7531009F4850 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3433F229F7531009F4850 /* FirstViewController.swift */; };
 		16B34342229F7531009F4850 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B34341229F7531009F4850 /* SecondViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16183DDC22DA7F74001178DC /* googleMapMini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleMapMini.swift; sourceTree = "<group>"; };
+		16183DDE22DA9569001178DC /* MyTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabController.swift; sourceTree = "<group>"; };
+		16183DE022DA95EC001178DC /* ATabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATabController.swift; sourceTree = "<group>"; };
 		16B3433A229F7531009F4850 /* popTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B3433D229F7531009F4850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16B3433F229F7531009F4850 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +75,10 @@
 				16B3433F229F7531009F4850 /* FirstViewController.swift */,
 				16B34341229F7531009F4850 /* SecondViewController.swift */,
 				16B34351229FAF81009F4850 /* ThirdViewController.swift */,
+				16183DDC22DA7F74001178DC /* googleMapMini.swift */,
+				16183DE022DA95EC001178DC /* ATabController.swift */,
 				16B34343229F7531009F4850 /* Main.storyboard */,
+				16183DDE22DA9569001178DC /* MyTabController.swift */,
 				16B34346229F7532009F4850 /* Assets.xcassets */,
 				16B34348229F7532009F4850 /* LaunchScreen.storyboard */,
 				16B3434B229F7532009F4850 /* Info.plist */,
@@ -91,7 +100,6 @@
 				E657C16F350A2EC011FD80BD /* Pods-popTravel.debug.xcconfig */,
 				C170A8613BFE8F51B8123872 /* Pods-popTravel.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -229,8 +237,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B34342229F7531009F4850 /* SecondViewController.swift in Sources */,
+				16183DE122DA95EC001178DC /* ATabController.swift in Sources */,
 				16B34352229FAF81009F4850 /* ThirdViewController.swift in Sources */,
 				16B3433E229F7531009F4850 /* AppDelegate.swift in Sources */,
+				16183DDF22DA9569001178DC /* MyTabController.swift in Sources */,
+				16183DDD22DA7F74001178DC /* googleMapMini.swift in Sources */,
 				16B34340229F7531009F4850 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
