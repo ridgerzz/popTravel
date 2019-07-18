@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Fi-xP-rSQ">
-                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="EMG-Ps-Up2">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
@@ -39,14 +39,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="home_icon" landscapeImage="home_icon" largeContentSizeImage="home_icon" selectedImage="home_icon" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="2Tl-CD-Kle"/>
                     <connections>
                         <outlet property="mapView" destination="EMG-Ps-Up2" id="2M0-gp-gPP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773.60000000000002" y="-1000.4926108374385"/>
+            <point key="canvasLocation" x="1716" y="-1000.4926108374385"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="tir-kI-bfL">
@@ -193,7 +193,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="s4t-OB-2C3" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="gmT-hx-T0e" kind="relationship" relationship="viewControllers" id="w3g-aU-bN7"/>
                         <segue destination="ylr-f8-AOg" kind="relationship" relationship="viewControllers" id="hKe-2c-RjU"/>
@@ -216,11 +216,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pkb-N7-4bk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767" y="-1000"/>
+            <point key="canvasLocation" x="2708" y="-1000.4926108374385"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3xP-eX-ixt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s4t-OB-2C3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="home_icon" landscapeImage="home_icon" largeContentSizeImage="home_icon" selectedImage="home_icon" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VR1-BC-Gig">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="a0k-sP-t25"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceu-GY-oys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.60000000000002" y="-1000.4926108374385"/>
         </scene>
     </scenes>
     <resources>
-        <image name="add_location_btn" width="17" height="24.333333969116211"/>
+        <image name="add_location_btn" width="14" height="19"/>
         <image name="calendar_icon" width="20" height="20"/>
         <image name="home_icon" width="16" height="18.666666030883789"/>
         <image name="profile_icon" width="20" height="20"/>

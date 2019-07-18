@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: ATabController, UIGestureRecognizerDelegate {
+class FirstViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet var mapView: UIView!
     
@@ -23,7 +23,9 @@ class FirstViewController: ATabController, UIGestureRecognizerDelegate {
     
     @objc func tapped(gestureRecognizer: UITapGestureRecognizer) {
         //go to tab
-        tabDelegate?.switchTab(to:  .second)
+        let appDelegate  = UIApplication.shared.delegate as! AppDelegate
+        let tabBarController = appDelegate.window!.rootViewController as! UITabBarController
+        tabBarController.selectedIndex = 1
     }
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {

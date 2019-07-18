@@ -1,0 +1,6 @@
+framework module Pods_popTravel {
+  umbrella header "Pods-popTravel-umbrella.h"
+
+  export *
+  module * { export * }
+}
