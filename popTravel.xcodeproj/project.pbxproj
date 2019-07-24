@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1542672AB05A813B4C000556 /* Pods_popTravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0171BADD19CC3E0929E215F /* Pods_popTravel.framework */; };
 		16183DDD22DA7F74001178DC /* googleMapMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16183DDC22DA7F74001178DC /* googleMapMini.swift */; };
+		163CD36322E7BB570093EEF5 /* CustomAdvertismentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163CD36122E7BB570093EEF5 /* CustomAdvertismentCell.swift */; };
+		163CD36422E7BB570093EEF5 /* CustomAdvertismentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163CD36222E7BB570093EEF5 /* CustomAdvertismentCell.xib */; };
 		16B3433E229F7531009F4850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3433D229F7531009F4850 /* AppDelegate.swift */; };
 		16B34340229F7531009F4850 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3433F229F7531009F4850 /* FirstViewController.swift */; };
 		16B34342229F7531009F4850 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B34341229F7531009F4850 /* SecondViewController.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		16183DDC22DA7F74001178DC /* googleMapMini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleMapMini.swift; sourceTree = "<group>"; };
+		163CD36122E7BB570093EEF5 /* CustomAdvertismentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAdvertismentCell.swift; sourceTree = "<group>"; };
+		163CD36222E7BB570093EEF5 /* CustomAdvertismentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAdvertismentCell.xib; sourceTree = "<group>"; };
 		16B3433A229F7531009F4850 /* popTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B3433D229F7531009F4850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16B3433F229F7531009F4850 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		163CD35B22E7B8740093EEF5 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				163CD36122E7BB570093EEF5 /* CustomAdvertismentCell.swift */,
+				163CD36222E7BB570093EEF5 /* CustomAdvertismentCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		163CD35C22E7B8AC0093EEF5 /* FirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				163CD35B22E7B8740093EEF5 /* Custom Cell */,
+				16B3433F229F7531009F4850 /* FirstViewController.swift */,
+				16183DDC22DA7F74001178DC /* googleMapMini.swift */,
+			);
+			path = FirstViewController;
+			sourceTree = "<group>";
+		};
 		16B34331229F7530009F4850 = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				16B3433D229F7531009F4850 /* AppDelegate.swift */,
-				16B3433F229F7531009F4850 /* FirstViewController.swift */,
+				163CD35C22E7B8AC0093EEF5 /* FirstViewController */,
 				16B34341229F7531009F4850 /* SecondViewController.swift */,
 				16B34351229FAF81009F4850 /* ThirdViewController.swift */,
-				16183DDC22DA7F74001178DC /* googleMapMini.swift */,
 				16B34343229F7531009F4850 /* Main.storyboard */,
 				16B34346229F7532009F4850 /* Assets.xcassets */,
 				16B34348229F7532009F4850 /* LaunchScreen.storyboard */,
@@ -158,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163CD36422E7BB570093EEF5 /* CustomAdvertismentCell.xib in Resources */,
 				16B3434A229F7532009F4850 /* LaunchScreen.storyboard in Resources */,
 				16B34347229F7532009F4850 /* Assets.xcassets in Resources */,
 				16B34345229F7531009F4850 /* Main.storyboard in Resources */,
@@ -234,6 +257,7 @@
 				16B34352229FAF81009F4850 /* ThirdViewController.swift in Sources */,
 				16B3433E229F7531009F4850 /* AppDelegate.swift in Sources */,
 				16183DDD22DA7F74001178DC /* googleMapMini.swift in Sources */,
+				163CD36322E7BB570093EEF5 /* CustomAdvertismentCell.swift in Sources */,
 				16B34340229F7531009F4850 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
