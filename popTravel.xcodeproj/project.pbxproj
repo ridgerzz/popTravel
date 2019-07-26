@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1542672AB05A813B4C000556 /* Pods_popTravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0171BADD19CC3E0929E215F /* Pods_popTravel.framework */; };
+		1616171622EA9CE800D9E2DA /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616171522EA9CE800D9E2DA /* AccountViewController.swift */; };
+		1616171822EA9D9000D9E2DA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616171722EA9D9000D9E2DA /* MenuViewController.swift */; };
+		1616171A22EB550D00D9E2DA /* SlideinTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616171922EB550D00D9E2DA /* SlideinTransition.swift */; };
 		16183DDD22DA7F74001178DC /* googleMapMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16183DDC22DA7F74001178DC /* googleMapMini.swift */; };
 		163CD36322E7BB570093EEF5 /* CustomAdvertismentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163CD36122E7BB570093EEF5 /* CustomAdvertismentCell.swift */; };
 		163CD36422E7BB570093EEF5 /* CustomAdvertismentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163CD36222E7BB570093EEF5 /* CustomAdvertismentCell.xib */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1616171522EA9CE800D9E2DA /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		1616171722EA9D9000D9E2DA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1616171922EB550D00D9E2DA /* SlideinTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideinTransition.swift; sourceTree = "<group>"; };
 		16183DDC22DA7F74001178DC /* googleMapMini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleMapMini.swift; sourceTree = "<group>"; };
 		163CD36122E7BB570093EEF5 /* CustomAdvertismentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAdvertismentCell.swift; sourceTree = "<group>"; };
 		163CD36222E7BB570093EEF5 /* CustomAdvertismentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAdvertismentCell.xib; sourceTree = "<group>"; };
@@ -98,6 +104,9 @@
 				16B34346229F7532009F4850 /* Assets.xcassets */,
 				16B34348229F7532009F4850 /* LaunchScreen.storyboard */,
 				16B3434B229F7532009F4850 /* Info.plist */,
+				1616171522EA9CE800D9E2DA /* AccountViewController.swift */,
+				1616171722EA9D9000D9E2DA /* MenuViewController.swift */,
+				1616171922EB550D00D9E2DA /* SlideinTransition.swift */,
 			);
 			path = popTravel;
 			sourceTree = "<group>";
@@ -255,10 +264,13 @@
 			files = (
 				16B34342229F7531009F4850 /* SecondViewController.swift in Sources */,
 				16B34352229FAF81009F4850 /* ThirdViewController.swift in Sources */,
+				1616171622EA9CE800D9E2DA /* AccountViewController.swift in Sources */,
 				16B3433E229F7531009F4850 /* AppDelegate.swift in Sources */,
 				16183DDD22DA7F74001178DC /* googleMapMini.swift in Sources */,
 				163CD36322E7BB570093EEF5 /* CustomAdvertismentCell.swift in Sources */,
+				1616171A22EB550D00D9E2DA /* SlideinTransition.swift in Sources */,
 				16B34340229F7531009F4850 /* FirstViewController.swift in Sources */,
+				1616171822EA9D9000D9E2DA /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -161,7 +161,7 @@
         <!--Home-->
         <scene sceneID="bJd-zC-sFP">
             <objects>
-                <viewController id="ylr-f8-AOg" sceneMemberID="viewController">
+                <viewController id="ylr-f8-AOg" customClass="AccountViewController" customModule="popTravel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aqv-ep-OBu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,7 +172,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="ULt-T3-ZBK">
                             <color key="tintColor" red="0.99952834840000004" green="0.2001203895" blue="0.29846489430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="v6A-vF-jf3" kind="show" id="Lbg-2D-eRI"/>
+                                <action selector="didTapMenu:" destination="ylr-f8-AOg" id="lH1-6y-LqT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -184,11 +184,11 @@
         <!--Menu View Controller-->
         <scene sceneID="tap-e2-mfC">
             <objects>
-                <tableViewController id="v6A-vF-jf3" customClass="MenuViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MenuViewController" id="v6A-vF-jf3" customClass="MenuViewController" customModule="popTravel" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZNK-h9-Nt8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection id="Fio-Gy-T3O">
                                 <cells>
