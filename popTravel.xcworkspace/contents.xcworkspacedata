@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AccountViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:MenuViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:popTravel.xcodeproj">
    </FileRef>
    <FileRef
