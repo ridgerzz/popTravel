@@ -68,7 +68,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @objc func tapped(gestureRecognizer: UITapGestureRecognizer) {
         //go to tab
         let appDelegate  = UIApplication.shared.delegate as! AppDelegate
-        let tabBarController = appDelegate.window!.rootViewController as! UITabBarController
+        let tabBarController = appDelegate.window.rootViewController as! UITabBarController
         tabBarController.selectedIndex = 1
     }
     

@@ -28,6 +28,7 @@
 		16CCF4EB22F7C1410053B6DD /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CCF4EA22F7C1410053B6DD /* RestaurantTableViewCell.swift */; };
 		16CCF4EF22F7D1D20053B6DD /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CCF4EE22F7D1D20053B6DD /* LocationView.swift */; };
 		16CCF4F122F7DBCE0053B6DD /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CCF4F022F7DBCE0053B6DD /* LocationViewController.swift */; };
+		16CCF4F422F8E7D00053B6DD /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CCF4F322F8E7D00053B6DD /* LocationServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		16CCF4EA22F7C1410053B6DD /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		16CCF4EE22F7D1D20053B6DD /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		16CCF4F022F7DBCE0053B6DD /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		16CCF4F322F8E7D00053B6DD /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
 		C0171BADD19CC3E0929E215F /* Pods_popTravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_popTravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C170A8613BFE8F51B8123872 /* Pods-popTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popTravel.release.xcconfig"; path = "Target Support Files/Pods-popTravel/Pods-popTravel.release.xcconfig"; sourceTree = "<group>"; };
 		E657C16F350A2EC011FD80BD /* Pods-popTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popTravel.debug.xcconfig"; path = "Target Support Files/Pods-popTravel/Pods-popTravel.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		16B3433C229F7531009F4850 /* popTravel */ = {
 			isa = PBXGroup;
 			children = (
+				16CCF4F322F8E7D00053B6DD /* LocationServices.swift */,
 				16B3433D229F7531009F4850 /* AppDelegate.swift */,
 				1643A8D022F66B54001FE1D5 /* Screen */,
 				163CD35C22E7B8AC0093EEF5 /* FirstViewController */,
@@ -352,6 +355,7 @@
 				1643A8D222F66C86001FE1D5 /* BaseView.swift in Sources */,
 				16B34340229F7531009F4850 /* FirstViewController.swift in Sources */,
 				1616171822EA9D9000D9E2DA /* MenuViewController.swift in Sources */,
+				16CCF4F422F8E7D00053B6DD /* LocationServices.swift in Sources */,
 				16CCF4EB22F7C1410053B6DD /* RestaurantTableViewCell.swift in Sources */,
 				1643A8D822F6A8D2001FE1D5 /* DetailsFoodViewController.swift in Sources */,
 				16CCF4F122F7DBCE0053B6DD /* LocationViewController.swift in Sources */,
