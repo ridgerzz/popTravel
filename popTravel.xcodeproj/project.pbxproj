@@ -12,6 +12,7 @@
 		1616171822EA9D9000D9E2DA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616171722EA9D9000D9E2DA /* MenuViewController.swift */; };
 		1616171A22EB550D00D9E2DA /* SlideinTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616171922EB550D00D9E2DA /* SlideinTransition.swift */; };
 		16183DDD22DA7F74001178DC /* googleMapMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16183DDC22DA7F74001178DC /* googleMapMini.swift */; };
+		163723E222FAB3B900F64B72 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163723E122FAB3B900F64B72 /* NetworkService.swift */; };
 		163CD36322E7BB570093EEF5 /* CustomAdvertismentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163CD36122E7BB570093EEF5 /* CustomAdvertismentCell.swift */; };
 		163CD36422E7BB570093EEF5 /* CustomAdvertismentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163CD36222E7BB570093EEF5 /* CustomAdvertismentCell.xib */; };
 		1643A8D222F66C86001FE1D5 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643A8D122F66C86001FE1D5 /* BaseView.swift */; };
@@ -36,6 +37,7 @@
 		1616171722EA9D9000D9E2DA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1616171922EB550D00D9E2DA /* SlideinTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideinTransition.swift; sourceTree = "<group>"; };
 		16183DDC22DA7F74001178DC /* googleMapMini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleMapMini.swift; sourceTree = "<group>"; };
+		163723E122FAB3B900F64B72 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		163CD36122E7BB570093EEF5 /* CustomAdvertismentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAdvertismentCell.swift; sourceTree = "<group>"; };
 		163CD36222E7BB570093EEF5 /* CustomAdvertismentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAdvertismentCell.xib; sourceTree = "<group>"; };
 		1643A8D122F66C86001FE1D5 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		163723E022FA13D000F64B72 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				16CCF4F322F8E7D00053B6DD /* LocationServices.swift */,
+				163723E122FAB3B900F64B72 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		163CD35B22E7B8740093EEF5 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,8 +160,8 @@
 		16B3433C229F7531009F4850 /* popTravel */ = {
 			isa = PBXGroup;
 			children = (
-				16CCF4F322F8E7D00053B6DD /* LocationServices.swift */,
 				16B3433D229F7531009F4850 /* AppDelegate.swift */,
+				163723E022FA13D000F64B72 /* Services */,
 				1643A8D022F66B54001FE1D5 /* Screen */,
 				163CD35C22E7B8AC0093EEF5 /* FirstViewController */,
 				16B34341229F7531009F4850 /* SecondViewController.swift */,
@@ -346,6 +357,7 @@
 				16B34352229FAF81009F4850 /* ThirdViewController.swift in Sources */,
 				1616171622EA9CE800D9E2DA /* AccountViewController.swift in Sources */,
 				16B3433E229F7531009F4850 /* AppDelegate.swift in Sources */,
+				163723E222FAB3B900F64B72 /* NetworkService.swift in Sources */,
 				16CCF4E822F7C0900053B6DD /* RestaurantTableViewController.swift in Sources */,
 				16183DDD22DA7F74001178DC /* googleMapMini.swift in Sources */,
 				1643A8D622F69D64001FE1D5 /* DetailsFoodView.swift in Sources */,

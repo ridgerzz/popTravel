@@ -8,4 +8,6 @@ target 'popTravel' do
   # Pods for popTravel
     pod 'FSCalendar'
     pod 'GoogleMaps'
+    pod 'AlamofireImage'
+    pod 'Moya'
 end
