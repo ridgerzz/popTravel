@@ -21,15 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-        service.request(.search(lat: 36.114700, long: -115.172864)) { (result) in
-            switch result {
-            case .success(let response):
-                let root = try? self.jsonDecoder.decode(Root.self, from: response.data)
-                print(root)
-            case .failure(let error):
-                print("Error:  \(error)")
-            }
-        }
+        
         // Override point for customization after application launch.
         
         switch locationService.status {
@@ -38,11 +30,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             locationViewController?.locationService = locationService
             window.rootViewController = locationViewController
         default:
-            assertionFailure()
+            let nav = storyboard
+                .instantiateViewController(withIdentifier: "RestaurantNavigationController") as? UINavigationController
+            window.rootViewController = nav
+            loadBusinesses()
         }
         window.makeKeyAndVisible()
         
         return true
+    }
+    
+    private func loadBusinesses() {
+        service.request(.search(lat: 36.114700, long: -115.172864)) { (result) in
+            switch result {
+            case .success(let response):
+                let root = try? self.jsonDecoder.decode(Root.self, from: response.data)
+                let viewModels = root?.businesses.compactMap(RestaurantListViewModel.init)
+                if let nav = self.window.rootViewController as? UINavigationController,
+                    let restaurantListViewController = nav.topViewController as? RestaurantTableViewController {
+                    restaurantListViewController.viewModels = viewModels ?? []
+                }
+            case .failure(let error):
+                print("Error:  \(error)")
+            }
+        }
     }
 }
 
